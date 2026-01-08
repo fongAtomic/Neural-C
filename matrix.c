@@ -1,4 +1,4 @@
-#include "MyMatrix.c"
+#include "MyMatrix.h"
 #include <time.h>
 
 // 將矩陣隨機初始化為 -1.0 到 1.0 之間的數值
@@ -52,7 +52,7 @@ int Matrix_dot(MyMatrix* A , MyMatrix* B , MyMatrix* C){
     return 0;
 }
 
-void matrix_print(MyMatrix *m){
+void Matrix_print(MyMatrix *m){
     int i , j;
     for(i = 0 ; i < m->rows ; i++){
         for(j = 0 ; j < m->cols ; j++){
